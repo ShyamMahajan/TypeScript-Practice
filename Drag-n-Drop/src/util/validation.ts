@@ -1,5 +1,4 @@
 //Validator
-namespace App {
   export interface Validator {
     value: string | number;
     required?: boolean;
@@ -46,4 +45,4 @@ namespace App {
       return this.isValid;
     }
   }
-}
+

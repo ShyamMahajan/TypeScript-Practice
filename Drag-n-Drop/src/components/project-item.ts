@@ -1,5 +1,8 @@
 // Project Item Class
-namespace App {
+import { Draggable } from "../models/drag-drop.js"
+import { Project} from "../models/project.js"
+import { Component } from "./base-component.js"
+import { Autobind } from "../decorators/autobind.js"
   export class ProjectItem
     extends Component<HTMLUListElement, HTMLLIElement>
     implements Draggable
@@ -42,4 +45,4 @@ namespace App {
       event.dataTransfer!.effectAllowed = "move";
     }
   }
-}
+

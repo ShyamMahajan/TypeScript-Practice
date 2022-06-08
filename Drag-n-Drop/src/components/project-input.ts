@@ -1,5 +1,8 @@
 // Project Input Class
-namespace App {
+import { Component } from "./base-component.js"
+import { ValidatorOb } from "../util/validation.js"
+import { projectState } from "../state/project-state.js"
+import { Autobind } from "../decorators/autobind.js"
   export class ProjectInput extends Component<HTMLDivElement, HTMLFormElement> {
     titleInputElement: HTMLInputElement;
     descriptionInputElement: HTMLInputElement;
@@ -65,4 +68,4 @@ namespace App {
       }
     }
   }
-}
+
